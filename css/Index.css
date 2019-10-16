@@ -1,0 +1,38 @@
+#logo {display: block;
+
+width: 500;
+height: 200;
+size: 500px;
+;}
+ul{margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  list-style-type:none;}
+  
+  li{float: left;
+      display:block; font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+      padding: 4px;
+      color: black }
+  li a {text-align: center;
+  padding: 12px;
+  text-decoration: none; color: black; display: block;
+  font-size: 18px
+  
+  }
+  
+  li a:hover{background-color: red}
+  #EIMR {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  font-size:larger;
+background-color: black;
+color: white;
+font: size 44;
+}
+#site{text-align: center;
+color: white;
+}
