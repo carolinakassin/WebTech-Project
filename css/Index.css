@@ -1,13 +1,14 @@
 #logo {display: block;
-
-width: 500;
-height: 200;
-size: 500px;
+margin-right: auto;
+margin-left: auto;
+width: 250;
+height: 100;
+size: 200px;
 ;}
-ul{margin: 0;
+ul{
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: palevioletred;
   list-style-type:none;}
   
   li{float: left;
@@ -16,13 +17,13 @@ ul{margin: 0;
       padding: 4px;
       color: black }
   li a {text-align: center;
-  padding: 12px;
+  padding: 18px;
   text-decoration: none; color: black; display: block;
-  font-size: 18px
-  
+  font-size: 18px;
+  background-color: pink;
   }
   
-  li a:hover{background-color: red}
+  li a:hover{background-color: wheat}
   #EIMR {
     position: absolute;
     top: 50%;
@@ -30,9 +31,49 @@ ul{margin: 0;
     transform: translate(-50%, -50%);
   font-size:larger;
 background-color: black;
-color: white;
+color: pink;
 font: size 44;
 }
 #site{text-align: center;
 color: white;
+}
+h1 {
+  text-align: center;
+  color: palevioletred;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  size: 25px;
+}
+hr {
+  background-color: palevioletred;
+  
+}
+body {background-color:peachpuff;}
+img {background-color: palevioletred;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+h3 {text-align: center;
+color: palevioletred;
+font-family: Georgia, 'Times New Roman', Times, serif;}
+h2 {text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: palevioletred;}
+P {text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;}
+table {text-align: center;
+border: palevioletred;
+}
+.rat, th, tr, td {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px palevioletred solid;
+  border-collapse: collapse;
+}
+button {margin-left: auto;
+margin-right: auto; display: block;}
+#Site {
+  margin-right: auto;
+  margin-left:auto ;
+  display: block;
 }

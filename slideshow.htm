@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/Index.css">
+<script>
+
+const slides = ["images/pasta.jpg", "images/paris.jpg","images/milan.jpg","images/zuma.jpg","images/miami.jpg"]
+let i=0
+function slideshow(){
+    ten = document.getElementById("slidesh");
+    if (i == slides.length) {
+        i = 0
+      }
+      ten.src = slides[i];
+     i++ 
+      
+    setTimeout("slideshow()", 1500)
+}
+
+function rotate(){
+    let img = document.getElementById("slidesh");
+    img.setAttribute('style','transform:rotate(180deg)');
+}
+    </script>
+    
+</head>
+<body onload="slideshow()">
+    <hr>
+    <h1>Eat Is My Religion</h1>
+    <hr>
+    </div>
+    
+    <ul>
+    
+            <li><a href="Index.htm">Home</a></li>
+            
+        
+        <li><a href="USA.htm" >U.S.A</a></li>
+    
+        <li><a href="europe.htm" >Europe</a></li>
+    
+        <li><a href="america.htm" >Latin America</a></li>
+    
+        <li><a href="table.htm" >Ratings</a></li>
+    
+        <li><a href="form.htm" >Contact Us</a></li>
+    
+        <li><a href="aboutus.htm">About Us</a></li>
+
+        <li><a href="slideshow.htm">slideshow</a></li>
+
+    
+     
+    
+        <li><a href="SiteMap.htm">SiteMap</a></li>
+    
+        <li><a href="https://www.instagram.com/eatismyreligion/">Instagram</a></li>
+    
+     
+        <li><a href="gallery.htm">gallery</a></li>
+    
+    </ul>
+
+    <img onclick="rotate()" id="slidesh" src="images/tenconten.jpg" alt="tenconten" title="Tenconten" height="250" width="300">
+
+    
+  
+</body>
+</html>

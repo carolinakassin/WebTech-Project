@@ -1,26 +1,101 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Document</title>
+
     <link rel="stylesheet" type="text/css" href="css/Index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#p1").hover(function(){
+            alert("Great sushi");
+          },
+          function(){
+            alert("You can't miss it!");
+          }); 
+        });
+        </script>
+        
+    <!-- jquery  -->
 </head>
+
 <body>
-        <img src="images/mur_fb_bite_restaurant_food_001.jpg" height="200" alt="logo" title="logo">
-        <hr>
+    <hr>
+    <h1>Eat Is My Religion</h1>
+    <hr>
+    </div>
+    
     <ul>
-  
+    
+      
+            <li><a href="Index.htm">Home</a></li>
+            
         <li><a href="USA.htm" >U.S.A</a></li>
+    
         <li><a href="europe.htm" >Europe</a></li>
+    
         <li><a href="america.htm" >Latin America</a></li>
+    
         <li><a href="table.htm" >Ratings</a></li>
+    
         <li><a href="form.htm" >Contact Us</a></li>
-        <li><a href="Index.htm">Home</a></li>
+    
+        <li><a href="aboutus.htm">About Us</a></li>
+    
+        <li><a href="slideshow.htm">slideshow</a></li>
+
+    
         <li><a href="SiteMap.htm">SiteMap</a></li>
+    
+        <li><a href="https://www.instagram.com/eatismyreligion/">Instagram</a></li>
+    
      
+        <li><a href="gallery.htm">gallery</a></li>
+    
     </ul>
-   
+    
+    
+    <table>
+            <tr>
+                <td><img src="images/madrid.jpg" height="250" width="300" alt="madrid" title="madrid"></td>
+                <td><img src="images/milan.jpg" height="250" width="300" alt="milan" title="milan"></td>
+                <td><img src="images/paris.jpg" height="250" width="300" alt="paris" title="paris"></td>
+                <td><img src="images/istanbul.jpg" height="250" width="300" alt="istanbul" title="istanbul"></td>
+            </tr>
+        </table>
+    <table class="rat">
+        <caption>Eat is my religion's Europe's favorites 2019</caption>
+        <tr>
+                <th>Restaurant</th> <th>Price</th> <th>City</th> <th>Type of food</th> <th>Eat Is My Religion FAV</th>
+            </tr>
+            <tr>
+                 <td>Ten con Ten</td>   <td>$$$</td> <td>Madrid</td> <td> Italian </td> <td>Truffled pizza</td>
+                </tr>
+                <tr>
+                       <td>Paper Moon</td> <td>$$</td> <td>Milan</td> <td>Italian</td> <td>Papardelle</td>
+                    </tr>
+                    <tr>
+                           <td>L'entrecot</td> <td>$$$</td> <td>Paris</td> <td>Steakhouse</td> <td>Steak & Frites</td>
+                        </tr>
+                        <tr>
+                            <td id="p1">Nobu</td>    <td>$$$$</td> <td>London</td> <td>Japanese</td> <td>Omakase</td>
+                            </tr>
+                            <tr>
+                              <td>Zuma</td>  <td>$$$$</td> <td>Istanbul</td> <td>Asian Fusion</td> <td>Rock Shrimp</td>
+                            </tr>
+                            </table> 
+                            
+                            <hr>
+
 </body>
+
 </html>

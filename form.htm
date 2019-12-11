@@ -1,83 +1,181 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Contact Us</title>
+
     <link rel="stylesheet" type="text/css" href="css/Index.css">
+    <script>
+            function validateForm() {
+                let myform = document.getElementById ("myForm");
+              if (myform.firstname.value == "" || myForm.lastname.value == "") {
+                 ( alert ("complete your first and last name please"))
+              }
+             return false;
+            }
+        
+            </script>
    
+
 </head>
 
-<body>
-        <img id=logo src="images/mur_fb_bite_restaurant_food_001.jpg" height="200" alt="logo" title="logo"
-        >
-        <hr>
-        <ul>
-                <li><a href="USA.htm" >U.S.A</a></li>
-                <li><a href="europe.htm" >Europe</a></li>
-                <li><a href="america.htm" >Latin America</a></li>
-                <li><a href="table.htm" >Ratings</a></li>
-                <li><a href="form.htm" >Contact Us</a></li>
-                <li><a href="aboutus.htm">About Us</a></li>
-                <li><a href="Index.htm">Home</a></li>
-                <li><a href="SiteMap.htm">SiteMap</a></li>
-             
-            </ul>
+
+
+<body> <hr>
+    <h1>Eat Is My Religion</h1>
+    <hr>
+    </div>
+    
+    <ul>
+    
+            <li><a href="Index.htm">Home</a></li>
+            
+        
+        <li><a href="USA.htm" >U.S.A</a></li>
+    
+        <li><a href="europe.htm" >Europe</a></li>
+    
+        <li><a href="america.htm" >Latin America</a></li>
+    
+        <li><a href="table.htm" >Ratings</a></li>
+    
+        <li><a href="form.htm" >Contact Us</a></li>
+    
+        <li><a href="aboutus.htm">About Us</a></li>
+    
+        <li><a href="slideshow.htm">slideshow</a></li>
+
+    
+        <li><a href="SiteMap.htm">SiteMap</a></li>
+    
+        <li><a href="https://www.instagram.com/eatismyreligion/">Instagram</a></li>
+    
+     
+        <li><a href="gallery.htm">gallery</a></li>
+    
+    </ul>
+    
+    
+
+
     <h2>Contact Us</h2>
-    <form method="POST" action="mailto:ckassin2@babson.edu">
-        <p>
+
+    <!-- validated form  -->
+
+    <form  name="myForm" method="POST" id="myForm">
+
+        <p id="p1">
+
             Last Name:
-            <input type="text" name="last-name" size="20" maxlength="8" placeholder="Last Name">
+
+            <input type="text" name="lastname" size="20" maxlength="8" placeholder="Last Name">
+
+
 
             First Name:
-            <input type="text" name="first-name" size="20" maxlength="8" placeholder="First Name">
+
+            <input type="text" name="firstname" size="20" maxlength="8" placeholder="First Name">
+
+
 
             Email:
+
             <input type="text" name="email" size="20" maxlength="8" placeholder="email">
 
+
+
         </p>
 
 
+
+
+
         <p>
+
             Gender:
+
             Male <input type="radio" name="gender" value="M">
+
             Female <input type="radio" name="gender" value="F">
 
+
+
         </p>
+
         <p>
+
             I am interested in:<br>
+
             <p><input type="checkbox" name="favorite" value="USA">USA </p>
+
             <p><input type="checkbox" name="favorite" value="Europe"> Europe </p>
+
             <p> <input type="checkbox" name="favorite" value="Latin America"> Latin America</p>
+
             <p> <input type="checkbox" name="favorite" value="Asia"> Asia</p>
+
         </p>
+
+
 
         <p>
+
            What is your favorite type of food
+
             <select name="grade">
+
                 <option value="Italian">Italian</option>
+
                 <option value="Japanese">Japanese</option>
+
                 <option value="Chinese">Chinese</option>
+
                 <option value="American">American</option>
+
                 <option value="I like everything">I like everything</option>
+
                 </select>
+
         </p>
+
         <p> 
+
             <br>
+
             Questions
+
             <br>
+
             <textarea name="questions" rows="4" cols="28">Questions</textarea>
+
         </p>
 
 
-        <button type="submit" >
-            submit  </button>
-        <button type="reset">
+
+
+
+        <button onclick="return validateForm()" type="submit" >
+
+            submit  </button> <button type="reset">
+
                 reset   </button>
+
     
+
     </form>
+
 </body>
+
+
 
 </html>
